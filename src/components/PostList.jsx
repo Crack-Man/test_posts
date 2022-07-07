@@ -11,6 +11,7 @@ const PostList = () => {
     const [selectedPost, setSelectedPost] = useState({});
     const [totalPages, setTotalPages] = useState(1);
     const [currentPage, setCurrentPage] = useState(1);
+    // eslint-disable-next-line no-unused-vars
     const [limit, setLimit] = useState(10)
     const [visibleModal, setVisibleModal] = useState(false);
 
