@@ -1,0 +1,28 @@
+.post-pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+        display: flex;
+
+        .item {
+            padding: 5px;
+            border: 1px solid teal;
+            border-radius: 4px;
+            width: 25px;
+
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .item.current {
+            background: lightblue;
+        }
+
+        .item:not(:first-child):not(:only-child) {
+            margin-left: 15px;
+        }
+    }
+}

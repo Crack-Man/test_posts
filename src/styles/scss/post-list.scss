@@ -1,0 +1,33 @@
+.post-list {
+    margin-top: 25px;
+
+    .item {
+        padding: 15px;
+        border: 1px solid teal;
+        border-radius: 4px;
+
+        .title {
+            margin: 0;
+        }
+
+        .panel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .view, .delete {
+                font-size: 16px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .view:hover, .delete:hover {
+                color: teal;
+            }
+        }
+    }
+
+    .item:not(:first-child):not(:only-child) {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,32 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+
+    .modal-post {
+        border-radius: 4px;
+        padding: 15px;
+
+        position: absolute;
+        top: calc(50% - 200px / 2);
+        left: calc(50% - 640px / 2);
+        background: white;
+
+        width: 640px;
+        height: 200px;
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+
+        h1.title {
+            text-align: center;
+        }
+    }
+}
