@@ -15,10 +15,6 @@ const PostList = () => {
     const [limit, setLimit] = useState(10)
     const [visibleModal, setVisibleModal] = useState(false);
 
-    useEffect(() => {
-        setPost(fetchPosts(limit, currentPage));
-    }, [])
-
     const pagination = useMemo(() => {
         let array = [];
         for (let i = 0; i < totalPages; i++) {
@@ -55,6 +51,10 @@ const PostList = () => {
         setSelectedPost({});
         setVisibleModal(false);
     }
+
+    useEffect(() => {
+        fetchPosts(limit, currentPage);
+    }, [])
 
     return (
         <div>

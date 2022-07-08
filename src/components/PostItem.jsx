@@ -7,12 +7,12 @@ const PostItem = ({post, onSelectedPost, onDelete, ...props}) => {
                 {post.id}. {post.title}
             </h4>
             <div className="panel">
-                <div className="view" onClick={() => onSelectedPost(post)}>
+                <button className="view" onClick={() => onSelectedPost(post)}>
                     Просмотр
-                </div>
-                <div className="delete" onClick={() => onDelete(post.id)}>
+                </button>
+                <button className="delete" onClick={() => onDelete(post.id)}>
                     Удалить
-                </div>
+                </button>
             </div>
         </div>
     );

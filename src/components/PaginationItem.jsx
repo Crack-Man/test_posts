@@ -6,12 +6,12 @@ const PaginationItem = ({pagination, page, onChangePage, ...props}) => {
         <div className="pagination">
             {
                 pagination.map(index =>
-                    <div
-                        className={'item' + (page === index ? ' current' : '')}
+                    <button
+                        className={'pagination__item' + (page === index ? ' pagination__item_current' : '')}
                         onClick={() => onChangePage(index)}
                         key={index}>
                         {index}
-                    </div>
+                    </button>
                 )
             }
         </div>

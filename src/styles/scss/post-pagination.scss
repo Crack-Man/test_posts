@@ -6,23 +6,23 @@
     .pagination {
         display: flex;
 
-        .item {
+        .pagination__item {
             padding: 5px;
             border: 1px solid teal;
             border-radius: 4px;
-            width: 25px;
+            width: 35px;
 
             font-size: 18px;
             text-align: center;
             cursor: pointer;
         }
 
-        .item.current {
-            background: lightblue;
+        .pagination__item:not(:first-child):not(:only-child) {
+            margin-left: 15px;
         }
 
-        .item:not(:first-child):not(:only-child) {
-            margin-left: 15px;
+        .pagination__item_current {
+            background: lightblue;
         }
     }
 }

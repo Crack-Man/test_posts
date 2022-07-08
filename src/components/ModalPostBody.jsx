@@ -5,11 +5,11 @@ const ModalPostBody = ({post, onClosed, ...props}) => {
     return (
         <div className="overlay">
             <div className="modal-post">
-                <div className="close" onClick={onClosed}>X</div>
-                <h1 className="title">
+                <button className="modal-post__close" onClick={onClosed}>X</button>
+                <h1 className="modal-post__title">
                     {post.id}. {post.title}
                 </h1>
-                <div className="body">
+                <div className="modal-post__body">
                     {post.body}
                 </div>
             </div>
